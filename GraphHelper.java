@@ -66,7 +66,7 @@ abstract class GraphHelper {
         marked[root] = true;
         queue.offer(root);
 
-        // Visits every possible node from the root. 
+        // Visits every possible node from the root.
         // If 'tis empty, it finished visiting all nodes that was reachable.
         while (!queue.isEmpty()) {
             int node = queue.poll();

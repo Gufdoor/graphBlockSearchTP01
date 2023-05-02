@@ -4,7 +4,8 @@ import java.util.Set;
 
 /**
  * 
- * Public class for graph articulation related methods and attributes.
+ * Public class for graph articulation related methods and attributes
+ * operations.
  */
 public class Articulation {
     private int time;
@@ -15,7 +16,8 @@ public class Articulation {
     private List<Node> graph;
 
     /**
-     * This constructor initializes class attributes and calls for 
+     * 
+     * This constructor initializes class attributes and calls for
      * a DFS search right after to populate the class with data for
      * any other necessary operation.
      * 
@@ -35,7 +37,8 @@ public class Articulation {
     }
 
     /**
-     * This method is only responsible for handling DFS calls and 
+     * 
+     * This method is only responsible for handling DFS calls and
      * to guarantee visited list isn't empty.
      * 
      * @param nodeAmount node amount of a graph
@@ -52,15 +55,15 @@ public class Articulation {
         }
     }
 
-
     /**
+     * 
      * This method executes a DFS. With it, we can obtain a graph
      * necessary data to execute other operations like to discover
-     * how many articulations a graph has. It'll fulfill every 
+     * how many articulations a graph has. It'll fulfill every
      * list attribute position with values which each index
      * corresponds to an specific node.
      * 
-     * @param node node to be analized
+     * @param node   node to be analized
      * @param parent node's parent to be analized
      */
     private void depthFirstSearch(Node node, int parent) {
@@ -103,7 +106,7 @@ public class Articulation {
                 }
             }
         }
-        
+
         return articulations;
     }
 

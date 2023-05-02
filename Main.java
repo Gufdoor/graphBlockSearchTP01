@@ -5,10 +5,11 @@ import java.util.Set;
 /**
  * 
  * Graph practice lesson n01 - PUC MG
+ * 
  * @author Daniel Lucas Murta
  * @author Gabriel Luna dos Anjos
  * 
- * Managing blocks search on graphs.
+ *         Managing blocks search on graphs.
  */
 public class Main {
     public static void main(String[] args) {
